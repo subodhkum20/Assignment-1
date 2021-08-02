@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Assignment-1/static/css/main.7e32422f.chunk.css",
-    "main.js": "/Assignment-1/static/js/main.42104458.chunk.js",
-    "main.js.map": "/Assignment-1/static/js/main.42104458.chunk.js.map",
-    "runtime-main.js": "/Assignment-1/static/js/runtime-main.022c400f.js",
-    "runtime-main.js.map": "/Assignment-1/static/js/runtime-main.022c400f.js.map",
-    "static/js/2.2220d4c9.chunk.js": "/Assignment-1/static/js/2.2220d4c9.chunk.js",
-    "static/js/2.2220d4c9.chunk.js.map": "/Assignment-1/static/js/2.2220d4c9.chunk.js.map",
-    "static/js/3.bdeccc59.chunk.js": "/Assignment-1/static/js/3.bdeccc59.chunk.js",
-    "static/js/3.bdeccc59.chunk.js.map": "/Assignment-1/static/js/3.bdeccc59.chunk.js.map",
-    "index.html": "/Assignment-1/index.html",
-    "static/css/main.7e32422f.chunk.css.map": "/Assignment-1/static/css/main.7e32422f.chunk.css.map",
-    "static/js/2.2220d4c9.chunk.js.LICENSE.txt": "/Assignment-1/static/js/2.2220d4c9.chunk.js.LICENSE.txt"
+    "main.css": "/Assignment-1/subodh/mynotes/static/css/main.7e32422f.chunk.css",
+    "main.js": "/Assignment-1/subodh/mynotes/static/js/main.42104458.chunk.js",
+    "main.js.map": "/Assignment-1/subodh/mynotes/static/js/main.42104458.chunk.js.map",
+    "runtime-main.js": "/Assignment-1/subodh/mynotes/static/js/runtime-main.528afd1d.js",
+    "runtime-main.js.map": "/Assignment-1/subodh/mynotes/static/js/runtime-main.528afd1d.js.map",
+    "static/js/2.2dac1476.chunk.js": "/Assignment-1/subodh/mynotes/static/js/2.2dac1476.chunk.js",
+    "static/js/2.2dac1476.chunk.js.map": "/Assignment-1/subodh/mynotes/static/js/2.2dac1476.chunk.js.map",
+    "static/js/3.bdeccc59.chunk.js": "/Assignment-1/subodh/mynotes/static/js/3.bdeccc59.chunk.js",
+    "static/js/3.bdeccc59.chunk.js.map": "/Assignment-1/subodh/mynotes/static/js/3.bdeccc59.chunk.js.map",
+    "index.html": "/Assignment-1/subodh/mynotes/index.html",
+    "static/css/main.7e32422f.chunk.css.map": "/Assignment-1/subodh/mynotes/static/css/main.7e32422f.chunk.css.map",
+    "static/js/2.2dac1476.chunk.js.LICENSE.txt": "/Assignment-1/subodh/mynotes/static/js/2.2dac1476.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.022c400f.js",
-    "static/js/2.2220d4c9.chunk.js",
+    "static/js/runtime-main.528afd1d.js",
+    "static/js/2.2dac1476.chunk.js",
     "static/css/main.7e32422f.chunk.css",
     "static/js/main.42104458.chunk.js"
   ]
