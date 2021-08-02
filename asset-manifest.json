@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Assignment-1/subodh/mynotes/build/static/css/main.7e32422f.chunk.css",
-    "main.js": "/Assignment-1/subodh/mynotes/build/static/js/main.42104458.chunk.js",
-    "main.js.map": "/Assignment-1/subodh/mynotes/build/static/js/main.42104458.chunk.js.map",
-    "runtime-main.js": "/Assignment-1/subodh/mynotes/build/static/js/runtime-main.0535be2e.js",
-    "runtime-main.js.map": "/Assignment-1/subodh/mynotes/build/static/js/runtime-main.0535be2e.js.map",
-    "static/js/2.58c68dc2.chunk.js": "/Assignment-1/subodh/mynotes/build/static/js/2.58c68dc2.chunk.js",
-    "static/js/2.58c68dc2.chunk.js.map": "/Assignment-1/subodh/mynotes/build/static/js/2.58c68dc2.chunk.js.map",
-    "static/js/3.bdeccc59.chunk.js": "/Assignment-1/subodh/mynotes/build/static/js/3.bdeccc59.chunk.js",
-    "static/js/3.bdeccc59.chunk.js.map": "/Assignment-1/subodh/mynotes/build/static/js/3.bdeccc59.chunk.js.map",
-    "index.html": "/Assignment-1/subodh/mynotes/build/index.html",
-    "static/css/main.7e32422f.chunk.css.map": "/Assignment-1/subodh/mynotes/build/static/css/main.7e32422f.chunk.css.map",
-    "static/js/2.58c68dc2.chunk.js.LICENSE.txt": "/Assignment-1/subodh/mynotes/build/static/js/2.58c68dc2.chunk.js.LICENSE.txt"
+    "main.css": "/subodh/mynotes/build/static/css/main.7e32422f.chunk.css",
+    "main.js": "/subodh/mynotes/build/static/js/main.42104458.chunk.js",
+    "main.js.map": "/subodh/mynotes/build/static/js/main.42104458.chunk.js.map",
+    "runtime-main.js": "/subodh/mynotes/build/static/js/runtime-main.0958bcc7.js",
+    "runtime-main.js.map": "/subodh/mynotes/build/static/js/runtime-main.0958bcc7.js.map",
+    "static/js/2.42a8d25d.chunk.js": "/subodh/mynotes/build/static/js/2.42a8d25d.chunk.js",
+    "static/js/2.42a8d25d.chunk.js.map": "/subodh/mynotes/build/static/js/2.42a8d25d.chunk.js.map",
+    "static/js/3.bdeccc59.chunk.js": "/subodh/mynotes/build/static/js/3.bdeccc59.chunk.js",
+    "static/js/3.bdeccc59.chunk.js.map": "/subodh/mynotes/build/static/js/3.bdeccc59.chunk.js.map",
+    "index.html": "/subodh/mynotes/build/index.html",
+    "static/css/main.7e32422f.chunk.css.map": "/subodh/mynotes/build/static/css/main.7e32422f.chunk.css.map",
+    "static/js/2.42a8d25d.chunk.js.LICENSE.txt": "/subodh/mynotes/build/static/js/2.42a8d25d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0535be2e.js",
-    "static/js/2.58c68dc2.chunk.js",
+    "static/js/runtime-main.0958bcc7.js",
+    "static/js/2.42a8d25d.chunk.js",
     "static/css/main.7e32422f.chunk.css",
     "static/js/main.42104458.chunk.js"
   ]
