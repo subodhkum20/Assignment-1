@@ -9,9 +9,9 @@ var cors = require('./cors')
 /* GET users listing. */
 router.route('/').options((req,res)=>{
   res.statusCode=200;
-}).get(function (req, res, next) {
+}).get(cors.corsWithOptions,function (req, res, next) {
   res.send('respond with a resource');
-}).post(cors.corsWithOptions,(req, res, next) => {
+}).post(cors.cors,(req, res, next) => {
   if(req.body.username&&req.body.password){
     users.findOne({username:req.body.username}).then((user)=>{
       if(user){
@@ -60,7 +60,7 @@ router.route('/login').post(cors.corsWithOptions,(req, res,next) => {
         res.send({err:"incorrect password"})
       }
       else{
-        var token=authenticate.getToken({_id:user._id})
+          var token=authenticate.getToken({_id:user._id})
           res.statusCode=200;
           res.Header={'Content-Type':'application/json'};
           res.send({success:true,token:token})

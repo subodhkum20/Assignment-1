@@ -55,7 +55,7 @@ class mainComponent extends React.Component {
 
     render() {
         if (this.state.active == "important" && this.state.important != null && this.state.notes != null) return (
-            <div className="App">
+            // <div className="App">
                 <ImportantNotes
                     active={(e, active) => {
                     e.preventDefault();
@@ -66,7 +66,7 @@ class mainComponent extends React.Component {
                     important={this.state.important}
                     getCookie={this.getCookie}    
                 />
-            </div >
+            // </div >
         )
         else if (this.state.notes != null && this.state.active == 'home') return (
             <Homepage notes={this.state.notes}

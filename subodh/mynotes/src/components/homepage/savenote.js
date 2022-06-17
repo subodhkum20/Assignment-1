@@ -4,13 +4,13 @@ class savenote extends React.Component {
     render(){
         return(
             <div id="savenote">
-                    <div className="addNote" id="title">
+                    <div className="addNote" >
                         <h2 id="title">Add Title</h2>
-                        <textarea id="addTitle" rows="2" columns="5" />
+                        <textarea id="addTitle" rows="2" columns="5" href="#title"/>
                     </div>
-                    <div className="addNote" id="title">
+                    <div className="addNote" >
                         <h3 id="Body">Add Note</h3>
-                        <textarea id="addNote" rows="12" columns="5" />
+                        <textarea id="addNote" rows="12" columns="5" href="#Body"/>
                     </div>
                     <button id="saveButton" className="addNote" onClick={(e) => {
                         e.preventDefault();
