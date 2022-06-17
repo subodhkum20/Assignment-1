@@ -9,7 +9,7 @@ var cors = require('./cors')
 /* GET users listing. */
 router.route('/').options((req,res)=>{
   res.statusCode=200;
-}).get(cors.corsWithOptions,function (req, res, next) {
+}).get(cors.cors,function (req, res, next) {
   res.send('respond with a resource');
 }).post(cors.cors,(req, res, next) => {
   if(req.body.username&&req.body.password){
@@ -41,7 +41,7 @@ router.route('/').options((req,res)=>{
     res.send({err:"username and password required"})
   }
 })
-router.route('/login').post(cors.corsWithOptions,(req, res,next) => {
+router.route('/login').post(cors.cors,(req, res,next) => {
   users.findOne({username:req.body.username}).then((user,err)=>{
     if(err){
       res.statusCode=401;
