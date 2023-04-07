@@ -30,7 +30,7 @@ class login extends React.Component {
                     <br />
                     <button id="loginButton" onClick={(e) => {
                         e.preventDefault();
-                        var requestBody = {
+                        var reqBody = {
                             username: document.getElementById('username').value,
                             password: document.getElementById('password').value,
                         }

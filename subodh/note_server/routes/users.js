@@ -6,12 +6,15 @@ var passport = require('passport')
 router.use(bodyParser.json())
 var authenticate=require('../authenticate');
 var cors = require('./cors')
-/* GET users listing. */
 router.route('/').options((req,res)=>{
   res.statusCode=200;
+  res.setHeader('Access-Control-Allow-Origin','*');
+  res.setHeader('Access-Control-Allow-Methods','POST');
+  res.send({err:'hello world'})
 }).get(cors.cors,function (req, res, next) {
   res.send('respond with a resource');
-}).post(cors.cors,(req, res, next) => {
+}).post(cors.corsWithOptions,(req, res, next) => {
+  console.log(req.body)
   if(req.body.username&&req.body.password){
     users.findOne({username:req.body.username}).then((user)=>{
       if(user){
@@ -22,7 +25,7 @@ router.route('/').options((req,res)=>{
       else{
         users.create(req.body).then((user,err) => {
           if(err) {
-            res.statusCode=500;
+            res.statusCode=401;
             res.setHeader('Content-Type', 'application/json');
             res.json({err:err})
           }
@@ -31,17 +34,22 @@ router.route('/').options((req,res)=>{
             res.setHeader('Content-Type', 'application/json');
             res.send(user);
           }
+        }).catch((err)=>{ 
+          res.statusCode=401;
+          res.setHeader('Content-Type', 'application/json');
+          res.send({err:"try different password"});
         })
       }
     })
   }
   else{
-    res.statusCode=500;
+    res.statusCode=401;
     res.setHeader('Content-Type', 'application/json');
+    console.log("abcd");
     res.send({err:"username and password required"})
   }
 })
-router.route('/login').post(cors.cors,(req, res,next) => {
+router.route('/login').post(cors.corsWithOptions,(req, res,next) => {
   users.findOne({username:req.body.username}).then((user,err)=>{
     if(err){
       res.statusCode=401;
