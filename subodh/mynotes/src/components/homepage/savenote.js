@@ -22,7 +22,7 @@ class savenote extends React.Component {
                             title: title,
                             body: note
                         }
-                        fetch('https://yournoteserver.herokuapp.com/savenote/', {
+                        fetch('http://localhost:3100/savenote/', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/x-www-form-urlencoded',

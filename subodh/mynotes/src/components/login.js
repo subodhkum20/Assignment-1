@@ -34,7 +34,7 @@ class login extends React.Component {
                             username: document.getElementById('username').value,
                             password: document.getElementById('password').value,
                         }
-                        fetch('https://yournoteserver.herokuapp.com/users/login', {
+                        fetch('http://localhost:3100/users/login', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/x-www-form-urlencoded'
@@ -54,8 +54,8 @@ class login extends React.Component {
                             }
                             else {
                                 const cookies = new Cookies()
-                                cookies.set('token', 'Bearer ' + response.token, 'https://yournoteserver.herokuapp.com/savenote');
-                                fetch('https://yournoteserver.herokuapp.com/savenote', {
+                                cookies.set('token', 'Bearer ' + response.token, 'http://localhost:3100/savenote');
+                                fetch('http://localhost:3100/savenote', {
                                     method: 'GET',
                                     headers: {
                                         'Content-Type': 'text/plain',

@@ -50,7 +50,7 @@ class EditableNotes extends React.Component {
                                 title: document.getElementById(this.props.note._id).firstChild.innerText,
                                 body: document.getElementById(this.props.note._id).firstChild.nextSibling.innerText
                             }
-                            fetch(`https://yournoteserver.herokuapp.com/savenote/${this.props.note._id}`, {
+                            fetch(`http://localhost:3100/savenote/${this.props.note._id}`, {
                                 method: 'PUT',
                                 headers: {
                                     'authorization': this.props.getCookie("token"),
@@ -82,7 +82,7 @@ class NotesWithOptions extends React.Component {
                     <div id="options">
                         <button onClick={(e) => {
                             this.setState({ editableNote: null, options: null })
-                            fetch(`https://yournoteserver.herokuapp.com/savenote/${this.props.note._id}`, {
+                            fetch(`http://localhost:3100/savenote/${this.props.note._id}`, {
                                 method: 'DELETE',
                                 headers: {
                                     'authorization': this.props.getCookie("token"),
@@ -100,7 +100,7 @@ class NotesWithOptions extends React.Component {
                         <button onClick={(e) => { this.props.edit(e,this.props.note._id)}}>edit</button>
                         <button onClick={(e) => {
                             e.preventDefault();
-                            fetch(`https://yournoteserver.herokuapp.com/savenote/${this.props.note._id}/important`, {
+                            fetch(`http://localhost:3100/savenote/${this.props.note._id}/important`, {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'text/plain',
